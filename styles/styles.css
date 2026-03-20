@@ -1,27 +1,28 @@
 :root {
     --main-color: #333333;
-    /*example: replace with your repeated colors */
     --secondary-color: #777777;
     --font-primary: Arial, Helvetica, sans-serif;
     --font-size-base: 16px;
-    /* Add more variables for repeated values you find */
+    --heading-color: darkblue;
+    --aside-bg: #eee;
+    --shadow-color: #777;
 }
 
 nav {
     background-color: var(--main-color);
-    /* instead of darkblue */
     padding: 10px;
 }
 
 nav a {
+    display: inline-block;
+    margin-right: 15px;
     color: var(--secondary-color);
-    /* instead of white */
-    display: block;
-    padding: 20px;
+    text-decoration: none;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-color);
+    font-family: var(--font-primary);
 }
 
 main {
@@ -33,7 +34,7 @@ main img {
     height: auto;
     border: 1px solid #000;
     padding: 2px;
-    box-shadow: 0 0 30px #777;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
 p {
@@ -45,8 +46,8 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--aside-bg);
+    color: var(--main-color);
 }
 
 aside img {
