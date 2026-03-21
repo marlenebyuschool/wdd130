@@ -9,7 +9,7 @@
     --secondary-color: #777777;
     --font-primary: Arial, Helvetica, sans-serif;
     --font-size-base: 16px;
-    --heading-color: darkblue;
+    --heading-color: #00008b;
     --aside-bg: #eee;
     --shadow-color: #777;
 }
@@ -22,7 +22,7 @@ nav {
 nav a {
     display: inline-block;
     margin-right: 15px;
-    color: var(--secondary-color);
+    color: #ddd;
     text-decoration: none;
 }
 
@@ -34,14 +34,55 @@ h1 {
 main {
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+    padding: 1rem
 }
 
-main img {
+/* Intro section (text + image) */
+.intro::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.intro p {
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+.intro img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    width: 180px;
+    height: auto;
+    border: 1px solid #000;
+    padding: 2px;
+    box-shadow: 0 0 20px var(--shadow-color);
+}
+
+aside img {
+    width: 100%;
+}
+
+/* Bottom section */
+.bottom {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.bottom ul {
+    flex: 1;
+}
+
+.bottom aside {
+    flex: 1;
+    max-width: 300px;
+}
+
+.intro img {
     margin: 1rem;
-    width: 200px;
+    width: 180px;
     height: auto;
     border: 1px solid #000;
     padding: 2px;
@@ -52,44 +93,28 @@ p {
     padding: 0;
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: var(--aside-bg);
-    color: var(--main-color);
-    position: relative;
-    /* ✅ moved here correctly */
-}
-
 aside img {
     width: 100%;
     height: auto;
 }
 
 aside h2 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-}
+    margin-bottom: 0.5rem;
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
+    footer {
+        margin-top: 15px;
+        border-top: 1px solid #000;
+        text-align: center;
+    }
 
-/* ========================
+    /* ========================
    Class Selectors
    ======================== */
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #333;
-    background-color: #f0f0f0;
-    color: #000;
-}
+    .box {
+        margin: 1rem;
+        padding: 1rem;
+        border: 1px solid #333;
+        background-color: #f0f0f0;
+        color: #000;
+        border-radius: 6px;
+    }
