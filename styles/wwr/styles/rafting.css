@@ -37,7 +37,17 @@ h2 {
 }
 
 /* Spacing */
-nav,
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
 p,
 section,
 article {
