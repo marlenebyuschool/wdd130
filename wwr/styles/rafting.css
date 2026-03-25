@@ -91,7 +91,8 @@ article {
     bottom: 20px;
     left: 40px;
     right: 40px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(244, 162, 97, 0.8);
+    /* your --secondary-color */
     padding: 15px;
 }
 
