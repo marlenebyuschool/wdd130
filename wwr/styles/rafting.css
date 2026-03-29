@@ -19,17 +19,28 @@ body {
     color: var(--accent1-color);
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px
+}
+
+header img {
+    width: 120px;
+}
+
 /* Center layout */
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
+}
 
-    header img {
-        width: 120px;
-        height: auto;
-    }
+header img {
+    width: 120px;
+    height: auto;
 }
 
 /* Headings */
@@ -42,14 +53,17 @@ h2 {
 /* Spacing */
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex justify-content: flex-end;
     gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
     text-decoration: none;
     color: #003366;
     font-weight: bold;
+    padding: 8px 12px;
 }
 
 p,
@@ -60,19 +74,22 @@ article {
 }
 
 /* Social media links */
-.socialmedia a {
+.social a {
     text-decoration: none;
 }
 
 /* Hero div */
 .hero {
     position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    max-width: 100%;
 }
 
 .hero h1 {
