@@ -153,16 +153,23 @@ footer {
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid #ccc;
+    text-align: center;
 }
 
 .social {
     display: flex;
     gap: 10px;
+    margin-top: 10px;
+
+}
+
+.social a {
+    text-decoration: none;
 }
 
 .social img {
-    width: 40px;
-    height: auto;
+    width: 30px;
+    margin: 0 5px;
 }
 
 body {
@@ -182,14 +189,17 @@ figure {
 nav {
     display: flex;
     gap: 20px;
+    background-color: #eee;
+    padding: 10px;
 }
 
 nav a {
     text-decoration: none;
     color: #000;
     background-color: #eee;
-    padding: 10px 15px;
+    padding: 5px;
     border: 1px solid #999;
+    display: block
 }
 
 main {
@@ -205,10 +215,10 @@ main img {
 }
 
 aside {
-    width: 840px;
+    width: 80%;
     margin: 20px auto;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px;
     background-color: #f4f4f4;
     color: #000;
 }
@@ -224,4 +234,6 @@ p {
 
 footer {
     text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
 }
