@@ -43,7 +43,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c8c6d8;
+    background-color: var(--header-bg);
     padding: 20px;
 }
 
@@ -55,16 +55,16 @@ header img {
 nav {
     display: flex;
     gap: 20px;
-    background-color: #eee;
+    background-color: var(--light-gray);
     padding: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #000;
+    color: var(--black);
     font-weight: bold;
     padding: 8px 12px;
-    border: 1px solid #999;
+    border: 1px solid var(--border-color);
 }
 
 /* Headings */
@@ -105,8 +105,8 @@ article {
     top: 20px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: var(--overlay-dark);
+    color: var(--white);
     padding: 10px;
 }
 
@@ -115,7 +115,7 @@ article {
     bottom: 20px;
     left: 40px;
     right: 40px;
-    background: rgba(244, 162, 97, 0.8);
+    background: var(--overlay-light);
     padding: 15px;
     max-width: 500px;
 }
