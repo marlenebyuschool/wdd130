@@ -6,9 +6,14 @@
     --black: #000;
     --white: #fff;
     --light-gray: #eee;
+    --medium-gray: #ccc;
+
     --header-bg: #c8c6d8;
+
     --overlay-dark: rgba(0, 0, 0, 0.5);
     --overlay-light: rgba(244, 162, 97, 0.8);
+
+    --border-color: var(--medium-gray);
 
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -34,8 +39,9 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
+    width: 100%;
 }
 
 /* Header */
@@ -160,12 +166,7 @@ article {
 
 figure {
     margin: 0;
-}
 
-/* Main */
-main {
-    max-width: 840px;
-    flex: 1;
 }
 
 /* Footer */
