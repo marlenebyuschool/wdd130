@@ -2,6 +2,14 @@
 :root {
     --primary-color: #055a05;
     --accent1-color: #264653;
+
+    --black: #000;
+    --white: #fff;
+    --light-gray: #eee;
+    --header-bg: #c8c6d8;
+    --overlay-dark: rgba(0, 0, 0, 0.5);
+    --overlay-light: rgba(244, 162, 97, 0.8);
+
     --body-font: Arial, Helvetica, sans-serif;
     --heading-font: "Times New Roman", "Georgia", serif;
 }
