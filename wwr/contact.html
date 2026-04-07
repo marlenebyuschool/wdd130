@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <h1>Contact Us</h1>
+        <h1>Contact White Water Rafting</h1>
 
         <!-- Contact Info -->
         <section class="contact-info">
@@ -72,19 +72,23 @@
                 <!-- Purpose -->
                 <p>Purpose of Message:</p>
 
-                <div class="radio-group">
-                    <label><input type="radio" name="purpose"> General Inquiry</label>
-                    <label><input type="radio" name="purpose"> Reservation Question</label>
-                    <label><input type="radio" name="purpose"> Website Suggestion</label>
-                </div>
+                <label for="general">
+                    <input type="radio" id="general" name="purpose" value="general">
+                    General Inquiry
+                </label>
 
-                <!-- Message -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
 
-                <!-- Newsletter -->
-                <label class="newsletter">
-                    <input type="checkbox" name="subscribe">
+                <label for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+                <label for="subscribe" class="newsletter">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
                 <!-- Submit -->

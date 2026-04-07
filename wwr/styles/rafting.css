@@ -267,7 +267,7 @@ button:hover {
 
 .newsletter {
     display: flex;
-    align-items: left;
+    align-items: flex-start;
     gap: 8px;
     /* space between checkbox and text */
 }
